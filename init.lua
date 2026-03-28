@@ -1,7 +1,9 @@
-minetest.register_chatcommand("seed", {
-    description = "Show the seed of the world",
+local S = core.get_translator(core.get_current_modname())
+
+core.register_chatcommand("seed", {
+    description = S("Show the seed of the world"),
     func = function(name, param)
-        local seed = minetest.get_mapgen_setting("seed")        
-        minetest.chat_send_player(name, "The seed of the world is: " .. seed)
+        local seed = core.get_mapgen_setting("seed")
+        core.chat_send_player(name, S("The seed of the world is: @1", seed))
     end,
 })
