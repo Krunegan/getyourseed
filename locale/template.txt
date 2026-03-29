@@ -1,0 +1,7 @@
+# textdomain:getyourseed
+
+Seed of the World=
+Adds chatcommand to get your Luanti world seed=
+
+Show the seed of the world=
+The seed of the world is: @1=
